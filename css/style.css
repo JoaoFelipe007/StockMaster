@@ -4,21 +4,22 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-img{
+img {
   height: 100%;
   max-width: 100%;
 }
-
-.container{
+.container {
   margin: 0 auto;
-  width: 65%;
+  width: 100%;
 }
 
-.imagem{
-  width: 100%;
+.imagem {
+  width: auto;
   height: 100%;
   float: none;
-  padding: 3% 10%;
+  padding: 3% 25%;
+  background-color: #f0fff5;
+
 }
 
 
@@ -41,7 +42,7 @@ img{
   text-decoration: none;
 }
 
-.nav-horizontal ul li a:hover{
+.nav-horizontal ul li a:hover {
   background-color: #0bd692;
 }
 
@@ -52,8 +53,15 @@ img{
       width: auto;
   }
 
-  .menu{
+  .menu {
     float: none;
     width: auto;
   }
+}
+@media all and (max-width 640px) {
+  .container {
+    float: none;
+    width: auto;
+  }
+
 }
