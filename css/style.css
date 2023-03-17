@@ -35,15 +35,19 @@ img{
 
 .nav-horizontal ul li a {
   color: rgb(255, 255, 255);
-  padding: 1.05%;
+  padding: 2%;
   display: inline-block;
   text-align: center;
   text-decoration: none;
 }
 
+.nav-horizontal ul li a:hover{
+  background-color: #0bd692;
+}
+
 
 @media all and (max-width 320px) {
-  .nav-horizontal ul li {
+  .nav-horizontal ul li a{
       float: none;
       width: auto;
   }
