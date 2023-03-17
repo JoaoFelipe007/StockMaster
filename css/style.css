@@ -9,7 +9,6 @@ img{
   max-width: 100%;
 }
 
-
 .container{
   margin: 0 auto;
   width: 65%;
@@ -34,7 +33,6 @@ img{
 
 }
 
-
 .nav-horizontal ul li a {
   color: rgb(255, 255, 255);
   padding: 1.05%;
@@ -49,15 +47,9 @@ img{
       float: none;
       width: auto;
   }
-}
 
-@media all and (max-width: 640px) {
-  .content-main {
-      float: none;
-      width: 100%;
+  .menu{
+    float: none;
+    width: auto;
   }
-}
-.nav-horizontal ul li {
-  float: none;
-  width: auto;
 }
