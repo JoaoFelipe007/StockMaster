@@ -4,45 +4,60 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-  margin: 0 auto;
-  width: 67%;
+img{
+  height: 100%;
+  max-width: 100%;
 }
 
 
-#nav-horizontal ul {
+.container{
+  margin: 0 auto;
+  width: 65%;
+}
+
+.imagem{
+  width: 100%;
+  height: 100%;
+  float: none;
+  padding: 3% 10%;
+}
+
+
+.nav-horizontal ul {
   list-style: none;
   padding: 0;
   background-color: #b7e4c7 ;
 }
 
-#nav-horizontal ul li {
+.nav-horizontal ul li {
   display: inline;
 
 }
 
 
-#nav-horizontal ul li a {
+.nav-horizontal ul li a {
   color: rgb(255, 255, 255);
   padding: 1.05%;
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  transition: backgroud .4s;
 }
 
-#nav-horizontal  ul li a:hover {
-  background-color: #57b788;  
+
+@media all and (max-width 320px) {
+  .nav-horizontal ul li {
+      float: none;
+      width: auto;
+  }
 }
 
-#nav-horizontal ul li:last-child a {
-  float: right;
+@media all and (max-width: 640px) {
+  .content-main {
+      float: none;
+      width: 100%;
+  }
 }
-#imagem {
-  height: 100%;
-  max-width: 100%;
-  padding: 2% 12%;
-
-
-
+.nav-horizontal ul li {
+  float: none;
+  width: auto;
 }
