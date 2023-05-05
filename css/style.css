@@ -20,6 +20,7 @@ header {
 
 .logo {
   cursor: pointer;
+  width: 20%;
 }
 
 img {
@@ -29,6 +30,11 @@ img {
 .container {
   margin: 0 auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .imagem {
@@ -103,6 +109,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #0d2c54;
 }
 
 .overlay a:hover,
@@ -125,7 +132,6 @@ img {
 }
 
 .title-beneficio {
-  margin-left: 30%;
   margin-top: 3%;
   font-size: 2em;
   color:#0d2c54;
@@ -144,15 +150,18 @@ img {
   border-left: 0.3em solid #b7e4c7;
   border-right: 0.3em solid #b7e4c7;
   background-color: white;
+  flex-basis: 50%;
 }
 
 .coluna-33 {
-  width: 33%;
+  width: 34%;
   word-wrap: break-word;
   text-align: justify;
   padding: 2%;
   border-left: 0.3em solid #b7e4c7;
+  border-right: 0.3em solid #b7e4c7;
   background-color: white;
+  flex-basis: 50%;
 }
 
 .main-footer {
@@ -164,6 +173,8 @@ img {
   text-align: center;
   width: 100%;
   height: auto;
+  align-items: center;
+
 }
 
 @media all and (max-width: 320px) {
@@ -193,6 +204,9 @@ img {
   .container {
     float: none;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .content-main {
     float: none;
@@ -207,17 +221,22 @@ img {
     margin-left: 30%;
     text-align: center;
     border-right: 0.3em solid #b7e4c7;
-    background-color: green!important;
+    flex-basis: 50%;
+  }
+
+  .coluna-34 {
+      margin-left: 30%;
+      text-align: center;
+      border-left: 0.3em solid #b7e4c7;
+      flex-basis: 50%;
   }
 
   .title-beneficio {
     font-size: 1em;
-    margin-left: 15%;
   }
 
   .main-footer {
     font-size: 0.6em;
-    text-align: left;
-    padding-left: 12%;
+    text-align: center;
   }
 }
