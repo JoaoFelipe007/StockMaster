@@ -21,6 +21,7 @@ header {
 .logo {
   cursor: pointer;
   width: 13%;
+  margin: -2px;
 }
 
 img {
@@ -188,6 +189,11 @@ img {
     top: 15px;
     right: 35px;
 }
+
+.logo {
+  width: 20%;
+}
+
 }
 
 
@@ -238,5 +244,9 @@ img {
   .main-footer {
     font-size: 0.6em;
     text-align: center;
+  }
+
+  .logo {
+    width: 20%;
   }
 }
