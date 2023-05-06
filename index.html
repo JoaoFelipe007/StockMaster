@@ -1,30 +1,66 @@
 <!DOCTYPE html>
 <html>
-
   <head>
       <meta charset="UTF-8">
       <title>StockMaster</title>
       <meta name="viewport" content="width=device-width,initial-scale=1"/>    
       <link href="css/style.css" rel="stylesheet" />
+      <meta name="description" content="">
+      <link  href="https://fonts.googleapis.com/css?family=Monteserrat:500&display=swap" rel="stylesheet">
   </head>
-
     <body>
-    <div class="content">  
-      <div class="menu">
-        <nav class="nav-horizontal">
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Funcionalidades</a></li>
-            <li><a href="#">Acesso</a></li>
-          </ul>
+      <header>
+        <a class="logo" href="#"><img src="imagem/logo5.png"></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li><a href="#">Funcionalidades</a></li>
+            </ul>
         </nav>
-      </div>
+        <a class="cta" href="#">Acesso</a>
+        <p class="menu cta">Menu</p>
+        <div class="overlay">
+          <a class="close">&times;</a>
+          <div class="overlay_content">
+            <a href="#">Sobre</a>
+            <a href="#">Contatos</a>
+            <a href="#">Funcionalidades</a>
+            <a href="#">Acesso</a>
+          </div>
+        </div> 
+      </header>
+    <script type="text/javascript" src="js/mobile.js"></script>  
       <div class="container">
               <div class="imagem">
                   <img src="imagem/homemsorrindo.png" width="1000">
               </div>
+              <div class="title-beneficio" >
+                      <p><strong>Benefícios de se usar o StockMaster</strong></p>
+                    </div>
+            <div class="text">
+              <div class="beneficios">
+                <div class="coluna-33"><h4 style="color: #081c15;">Melhor gestão do estoque:</h4> O Stock Master permite um controle 
+                  preciso e automatizado do estoque, evitando problemas como falta de produtos ou 
+                  excesso de estoque. Com o sistema, é possível monitorar a entrada e saída de produtos,
+                   o que permite um controle mais efetivo das vendas e das compras.</div>
+                <div class="coluna-33"><h4 style="color: #081c15;">Redução de custos:</h4> Com o controle eficiente do estoque,
+                   é possível reduzir os custos da empresa, evitando a necessidade de manter um
+                    grande volume de produtos em estoque e reduzindo o risco de perda ou desperdício 
+                    de produtos. Além disso, o Stock Master permite uma gestão mais eficiente dos
+                     pedidos e das entregas, o que pode levar a uma redução dos custos de transporte.
+                </div>
+                <div class="coluna-34"><h4 style="color: #081c15;">Melhoria da produtividade:</h4> Com o sistema de controle de estoque,
+                    os funcionários da empresa podem dedicar menos tempo à tarefa de controlar o estoque
+                   e mais tempo a outras atividades importantes para o negócio. Além disso, com informações
+                    mais precisas sobre a disponibilidade de produtos, é possível tomar decisões mais
+                     rapidamente e evitar atrasos na entrega de produtos aos clientes.</div>
+              </div>
+            </div>
       </div>
+      <footer class="main-footer">
+        Copyright © 2023 StockMaster. Todos os direitos reservados.
+          </footer>
     </div>  
     </body>
 </html>
