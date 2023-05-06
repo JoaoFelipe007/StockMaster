@@ -2,6 +2,26 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a9a9a9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #0d2c54;
+}
+
+.logo {
+  cursor: pointer;
+  width: 13%;
+  margin: -2px;
 }
 
 img {
@@ -11,6 +31,11 @@ img {
 .container {
   margin: 0 auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .imagem {
@@ -18,77 +43,176 @@ img {
   height: 100%;
   float: none;
   padding: 3% 25%;
-  background-color: #f0fff5;
+}
+
+.nav_links a,
+.cta,
+.overlay_content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+}
+
+.nav_links li {
+    padding: 0 20px;
+}
+
+.nav_links li a {
+    transition: color 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+.cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.menu {
+    display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+    width: 100%;
+}
+
+.overlay_content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d2c54;
+}
+
+.overlay a:hover,
+.overlay:focus {
+    color: #0088a9;
+}
+
+.overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
 }
 
 .beneficios {
   display: flex;
   margin-top: 1%;
+  width: 100%;
 }
 
 .title-beneficio {
-  margin-left: 30%;
   margin-top: 3%;
   font-size: 2em;
+  color:#0d2c54;
+  text-shadow: 
+  -1px -1px 0px #FFF, 
+  -1px 1px 0px #FFF,                    
+   1px -1px 0px #FFF,                  
+   1px 0px 0px #FFF;
 }
 
-.coluna-33 {
-  width: 33%;
+.coluna-34 {
+  width: 34%;
   word-wrap: break-word;
   text-align: justify;
   padding: 2%;
   border-left: 0.3em solid #b7e4c7;
+  border-right: 0.3em solid #b7e4c7;
+  background-color: white;
+  flex-basis: 50%;
 }
 
-.nav-horizontal ul {
-  list-style: none;
-  padding: 0;
-  background-color: #b7e4c7;
+.coluna-33 {
+  width: 34%;
+  word-wrap: break-word;
   text-align: justify;
-}
-
-.nav-horizontal ul li {
-  display: inline;
-}
-
-.nav-horizontal ul li a {
-  color: rgb(255, 255, 255);
   padding: 2%;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-}
-
-.nav-horizontal ul li a:hover {
-  background-color: #0bd692;
+  border-left: 0.3em solid #b7e4c7;
+  border-right: 0.3em solid #b7e4c7;
+  background-color: white;
+  flex-basis: 50%;
 }
 
 .main-footer {
-  background-color: #081c15;
+  background-color: #add8e6;
   clear: both;
   float: left;
   font-size: 0.75em;
   padding: 1.56%;
   text-align: center;
-  width: 96.7%;
+  width: 100%;
   height: auto;
+  align-items: center;
+
 }
 
 @media all and (max-width: 320px) {
-  .nav-horizontal ul li a {
-    float: none;
-    width: auto;
+  .overlay a {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
+.overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
+
+.logo {
+  width: 20%;
+}
+
+}
+
+
+@media all and (max-width: 640px) {
+  
+  .nav_links,
+  .cta {
+      display: none;
   }
 
   .menu {
-    float: none;
-    width: auto;
+      display: initial;
   }
-}
-@media all and (max-width: 640px) {
   .container {
     float: none;
     width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .content-main {
     float: none;
@@ -103,17 +227,27 @@ img {
     margin-left: 30%;
     text-align: center;
     border-right: 0.3em solid #b7e4c7;
+    flex-basis: 50%;
+  }
+
+  .coluna-34 {
+      margin-left: 30%;
+      text-align: center;
+      border-left: 0.3em solid #b7e4c7;
+      flex-basis: 50%;
   }
 
   .title-beneficio {
     font-size: 1em;
-    margin-left: 15%;
   }
 
   .main-footer {
     font-size: 0.6em;
-    text-align: left;
-    padding-left: 12%;
+    text-align: center;
+  }
+
+  .logo {
+    width: 20%;
   }
 
   .carousel{
