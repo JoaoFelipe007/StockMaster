@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-      <title>StockMaster</title>
-      <meta name="viewport" content="width=device-width,initial-scale=1"/>    
-      <link href="css/style.css" rel="stylesheet" />
-      <meta name="description" content="">
-      <link  href="https://fonts.googleapis.com/css?family=Monteserrat:500&display=swap" rel="stylesheet">
-  </head>
-    <body>
-      <header>
+    <meta charset="UTF-8">
+    <title>StockMaster</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Monteserrat:500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
         <a class="logo" href="#"><img src="imagem/logo5.png"></a>
         <nav>
             <ul class="nav_links">
@@ -21,59 +23,81 @@
         <a class="cta" href="#">Acesso</a>
         <p class="menu cta">Menu</p>
         <div class="overlay">
-          <a class="close">&times;</a>
-          <div class="overlay_content">
-            <a href="#">Sobre</a>
-            <a href="#">Contatos</a>
-            <a href="#">Funcionalidades</a>
-            <a href="#">Acesso</a>
-          </div>
-        </div> 
-      </header>
-      
-      <div class ="carousel">
-        <section class="slider">
-          <input name='slide' type="radio" checked>
-          <input name='slide' type="radio" >
-          <input name='slide' type="radio">
-      
-          <div class="slider-content">
-            <div class="slider-item"><img src="imagem/cara-com-tablet4.png"></div>
-              <div class="slider-item"><img src="imagem/cara-com-tablet.jpg"></div>
-              <div class="slider-item"><img src="imagem/cara-com-tablet2.jpg"></div>
-          </div>
-      </section>
-      </div>
-    <script type="text/javascript" src="js/mobile.js"></script>  
-      <div class="container">
-              <div class="title-beneficio" >
-                      <p><strong>Benefícios de se usar o StockMaster</strong></p>
-                    </div>
-            <div class="text">
-              <div class="beneficios">
-                <div class="coluna-33"><h4 style="color: #081c15;">Melhor gestão do estoque:</h4> O Stock Master permite um controle 
-                  preciso e automatizado do estoque, evitando problemas como falta de produtos ou 
-                  excesso de estoque. Com o sistema, é possível monitorar a entrada e saída de produtos,
-                   o que permite um controle mais efetivo das vendas e das compras.</div>
-                <div class="coluna-33"><h4 style="color: #081c15;">Redução de custos:</h4> Com o controle eficiente do estoque,
-                   é possível reduzir os custos da empresa, evitando a necessidade de manter um
-                    grande volume de produtos em estoque e reduzindo o risco de perda ou desperdício 
-                    de produtos. Além disso, o Stock Master permite uma gestão mais eficiente dos
-                     pedidos e das entregas, o que pode levar a uma redução dos custos de transporte.
-                </div>
-                <div class="coluna-34"><h4 style="color: #081c15;">Melhoria da produtividade:</h4> Com o sistema de controle de estoque,
-                    os funcionários da empresa podem dedicar menos tempo à tarefa de controlar o estoque
-                   e mais tempo a outras atividades importantes para o negócio. Além disso, com informações
-                    mais precisas sobre a disponibilidade de produtos, é possível tomar decisões mais
-                     rapidamente e evitar atrasos na entrega de produtos aos clientes.</div>
-              </div>
+            <a class="close">&times;</a>
+            <div class="overlay_content">
+                <a href="#">Sobre</a>
+                <a href="#">Contatos</a>
+                <a href="#">Funcionalidades</a>
+                <a href="#">Acesso</a>
             </div>
-      </div>
-      <footer>
+        </div>
+    </header>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="imagem/cara-com-tablet.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="imagem/homem-sorridente-de-tiro-medio-no-armazem.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="imagem/cara-com-tablet3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    </div>
+    <script type="text/javascript" src="js/mobile.js"></script>
+    <div class="container">
+        <div class="title-beneficio">
+            <p><strong>Benefícios de se usar o StockMaster</strong></p>
+        </div>
+        <div class="text-benf">
+            <div class="beneficios">
+                <div class="coluna-33">
+                    <h4 style="color: #081c15;">Melhor gestão do estoque:</h4> O Stock Master permite um controle
+                    preciso e automatizado do estoque, evitando problemas como falta de produtos ou
+                    excesso de estoque. Com o sistema, é possível monitorar a entrada e saída de produtos,
+                    o que permite um controle mais efetivo das vendas e das compras.
+                </div>
+                <div class="coluna-33">
+                    <h4 style="color: #081c15;">Redução de custos:</h4> Com o controle eficiente do estoque,
+                    é possível reduzir os custos da empresa, evitando a necessidade de manter um
+                    grande volume de produtos em estoque e reduzindo o risco de perda ou desperdício
+                    de produtos. Além disso, o Stock Master permite uma gestão mais eficiente dos
+                    pedidos e das entregas, o que pode levar a uma redução dos custos de transporte.
+                </div>
+                <div class="coluna-34">
+                    <h4 style="color: #081c15;">Melhoria da produtividade:</h4> Com o sistema de controle de estoque,
+                    os funcionários da empresa podem dedicar menos tempo à tarefa de controlar o estoque
+                    e mais tempo a outras atividades importantes para o negócio. Além disso, com informações
+                    mais precisas sobre a disponibilidade de produtos, é possível tomar decisões mais
+                    rapidamente e evitar atrasos na entrega de produtos aos clientes.
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
         <div class="main-content">
             <div class="left box">
                 <h2>
-                    Sobre 
+                    Sobre
                 </h2>
                 <div class="content">
                     <p>
@@ -96,15 +120,15 @@
                 <div class="content">
                     <div class="place">
                         <span class="fas fa-map-marker-alt"></span>
-                        <span class="text">Street, State</span>
+                        <span class="text-footer">Street, State</span>
                     </div>
                     <div class="phone">
                         <span class="fas fa-phone-alt"></span>
-                        <span class="text">+55 999 9999 9999</span>
+                        <span class="text-footer">+55 999 9999 9999</span>
                     </div>
                     <div class="email">
                         <span class="fas fa-envelope"></span>
-                        <span class="text">abc@example.com</span>
+                        <span class="text-footer">abc@example.com</span>
                     </div>
                 </div>
             </div>
@@ -115,11 +139,11 @@
                 <div class="content">
                     <form action="#">
                         <div class="email">
-                            <div class="text">Email *</div>
+                            <div class="text-footer">Email *</div>
                             <input type="email" required>
                         </div>
                         <div class="msg">
-                            <div class="text">Message *</div>
+                            <div class="text-footer">Message *</div>
                             <textarea name="msgform" id="msgform" cols="25" rows="2" required></textarea>
                             <br />
                             <div class="btn">
@@ -138,5 +162,6 @@
         </div>
     </footer>
     </div>
-  </body>
+</body>
+
 </html>
