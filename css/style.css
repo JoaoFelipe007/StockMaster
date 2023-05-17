@@ -50,8 +50,10 @@ img {
 .overlay_content a {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
+    font-size: 1.2em;
     color: #edf0f1;
     text-decoration: none;
+
 }
 
 .nav_links {
@@ -60,7 +62,7 @@ img {
 }
 
 .nav_links li {
-    padding: 0 20px;
+    padding: 30px 30px 30px 30px ;
 }
 
 .nav_links li a {
@@ -151,6 +153,7 @@ img {
   border-left: 0.3em solid #b7e4c7;
   border-right: 0.3em solid #b7e4c7;
   border-bottom: 0.5em solid #b7e4c7;
+  border-top: 0.5em solid #b7e4c7;
   background-color: white;
   flex-basis: 50%;
 }
@@ -163,15 +166,16 @@ img {
   border-left: 0.3em solid #b7e4c7;
   border-right: 0.3em solid #b7e4c7;
   border-bottom: 0.5em solid #b7e4c7;
+  border-top: 0.5em solid #b7e4c7;
   background-color: white;
   flex-basis: 50%;
 }
 
 footer {
-  position: relative;
+  position:relative;
   bottom: 0px;
   width: 100%;
-  background: #F8F8FF;
+  background: #7DF9FF;
 }
 
 .main-content {
@@ -268,7 +272,7 @@ footer {
 .right form .text {
   font-size: 1.025rem;
   margin-bottom: 2px;
-  color: #656565;
+  color: #000000;
 }
 
 .right form .msg {
@@ -307,6 +311,7 @@ footer {
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
+  color: #F8F8FF;
 }
 
 .right form .btn button:hover {
@@ -316,7 +321,7 @@ footer {
 .bottom center {
   padding: 5px;
   font-size: 0.9375rem;
-  background: #ffffff;
+  background: #7DF9FF;
 }
 
 .bottom center span {
@@ -390,7 +395,6 @@ footer {
     border-right: 0.3em solid #b7e4c7;
     border-bottom: 0.3em solid #b7e4c7;
     text-align: justify;
-    
     flex-basis: 80%;
   }
 
@@ -412,7 +416,7 @@ footer {
   }
 
   .logo {
-    width: 20%;
+    width: 30%;
   }
 
   .carousel{
@@ -489,4 +493,5 @@ footer {
   .main-content .box {
       margin: 5px 0;
   }
+
 }
