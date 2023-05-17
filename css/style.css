@@ -171,7 +171,11 @@ footer {
   position: relative;
   bottom: 0px;
   width: 100%;
+<<<<<<< HEAD
   background: #F8F8FF;
+=======
+  background: #add8e6;
+>>>>>>> fa44174dda89a82ead02142dfb24bf65440831d8
 }
 
 .main-content {
@@ -200,7 +204,11 @@ footer {
   top: -10px;
   height: 2px;
   width: 100%;
+<<<<<<< HEAD
   background-color: #0d2c54;
+=======
+  background-color: #1a1a1a;
+>>>>>>> fa44174dda89a82ead02142dfb24bf65440831d8
 }
 
 .box .content:after {
@@ -208,7 +216,11 @@ footer {
   content: '';
   height: 2px;
   width: 15%;
+<<<<<<< HEAD
   background-color: #0d2c54;
+=======
+  background-color: #f12020;
+>>>>>>> fa44174dda89a82ead02142dfb24bf65440831d8
   top: -10px;
 }
 
@@ -227,7 +239,11 @@ footer {
 .left .content .social a span {
   height: 40px;
   width: 40px;
+<<<<<<< HEAD
   background-color: #000000;
+=======
+  background-color: #1a1a1a;
+>>>>>>> fa44174dda89a82ead02142dfb24bf65440831d8
   line-height: 40px;
   text-align: center;
   font-size: 18px;
@@ -236,7 +252,11 @@ footer {
 }
 
 .left .content .social a span:hover {
+<<<<<<< HEAD
   background-color: #0d2c54;
+=======
+  background-color: #f12020;
+>>>>>>> fa44174dda89a82ead02142dfb24bf65440831d8
 }
 
 .center .content .fas {
@@ -279,14 +299,24 @@ footer {
 .right form textarea {
   width: 100%;
   font-size: 1.0625rem;
+<<<<<<< HEAD
   background-color: #ffffff;
   padding-left: 10px;
   border: 1px solid #000000;
+=======
+  background-color: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+>>>>>>> fa44174dda89a82ead02142dfb24bf65440831d8
 }
 
 .right form input:focus,
 #msgForm {
+<<<<<<< HEAD
     outline-color: #000000;
+=======
+    outline-color: #3498db;
+>>>>>>> fa44174dda89a82ead02142dfb24bf65440831d8
 }
 
 .right form input {
@@ -302,7 +332,11 @@ footer {
   width: 100%;
   border: none;
   outline: none;
+<<<<<<< HEAD
   background-color: #0d2c54;
+=======
+  background-color: #f12020;
+>>>>>>> fa44174dda89a82ead02142dfb24bf65440831d8
   font-size: 1.0625rem;
   font-weight: 500;
   cursor: pointer;
@@ -316,7 +350,11 @@ footer {
 .bottom center {
   padding: 5px;
   font-size: 0.9375rem;
+<<<<<<< HEAD
   background: #ffffff;
+=======
+  background: #151515;
+>>>>>>> fa44174dda89a82ead02142dfb24bf65440831d8
 }
 
 .bottom center span {
@@ -388,9 +426,12 @@ footer {
     width: 100%;
     text-align: center;
     border-right: 0.3em solid #b7e4c7;
+<<<<<<< HEAD
     border-bottom: 0.3em solid #b7e4c7;
     text-align: justify;
     
+=======
+>>>>>>> fa44174dda89a82ead02142dfb24bf65440831d8
     flex-basis: 80%;
   }
 
