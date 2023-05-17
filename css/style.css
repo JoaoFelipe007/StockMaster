@@ -150,6 +150,7 @@ img {
   padding: 2%;
   border-left: 0.3em solid #b7e4c7;
   border-right: 0.3em solid #b7e4c7;
+  border-bottom: 0.5em solid #b7e4c7;
   background-color: white;
   flex-basis: 50%;
 }
@@ -161,22 +162,177 @@ img {
   padding: 2%;
   border-left: 0.3em solid #b7e4c7;
   border-right: 0.3em solid #b7e4c7;
+  border-bottom: 0.5em solid #b7e4c7;
   background-color: white;
   flex-basis: 50%;
 }
 
-.main-footer {
-  background-color: #add8e6;
-  clear: both;
-  float: left;
-  font-size: 0.75em;
-  padding: 1.56%;
-  text-align: center;
+footer {
+  position: relative;
+  bottom: 0px;
   width: 100%;
-  height: auto;
-  align-items: center;
-
+  background: #F8F8FF;
 }
+
+.main-content {
+  display: flex;
+}
+
+.box h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.box .content:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background-color: #0d2c54;
+}
+
+.box .content:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background-color: #0d2c54;
+  top: -10px;
+}
+
+.left .content p {
+  text-align: justify;
+}
+
+.last .content .social {
+  margin: 20px 0 0 0;
+}
+
+.last .content .social a {
+  padding: 0 2px;
+}
+
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  background-color: #000000;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.left .content .social a span:hover {
+  background-color: #0d2c54;
+}
+
+.center .content .fas {
+  font-size: 1.4375rem;
+  background-color: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.center .content .fas:hover {
+  background-color: #f12020;
+}
+
+.center .content .text {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.center .content .phone {
+  margin: 15px 0;
+}
+
+.right form .text {
+  font-size: 1.025rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+
+.right form .msg {
+  margin-top: 10px;
+}
+
+.right form input,
+.right form textarea {
+  width: 100%;
+  font-size: 1.0625rem;
+  background-color: #ffffff;
+  padding-left: 10px;
+  border: 1px solid #000000;
+}
+
+.right form input:focus,
+#msgForm {
+    outline-color: #000000;
+}
+
+.right form input {
+    height: 35px;
+}
+
+.right form .btn {
+    margin-top: 10px;
+}
+
+.right form .btn button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #0d2c54;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.right form .btn button:hover {
+  background-color: #000;
+}
+
+.bottom center {
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #ffffff;
+}
+
+.bottom center span {
+  color: #656565;
+}
+
+.bottom center a {
+  color: #f12020;
+  text-decoration: none;
+}
+
+.bottom .center a:hover {
+  text-decoration: underline;
+}
+
+
 
 @media all and (max-width: 320px) {
   .overlay a {
@@ -193,6 +349,11 @@ img {
 .logo {
   width: 20%;
 }
+
+.title-beneficio {
+  font-size: 0.5em;
+}
+
 
 }
 
@@ -224,21 +385,25 @@ img {
   }
 
   .coluna-33 {
-    margin-left: 30%;
+    width: 100%;
     text-align: center;
     border-right: 0.3em solid #b7e4c7;
-    flex-basis: 50%;
+    border-bottom: 0.3em solid #b7e4c7;
+    text-align: justify;
+    
+    flex-basis: 80%;
   }
 
   .coluna-34 {
-      margin-left: 30%;
-      text-align: center;
-      border-left: 0.3em solid #b7e4c7;
-      flex-basis: 50%;
+    width: 100%;
+    text-align: center;
+    border-left: 0.3em solid #b7e4c7;
+    text-align: justify;
+    flex-basis: 50%;
   }
 
   .title-beneficio {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   .main-footer {
@@ -308,4 +473,20 @@ img {
 
 .slider img{
   width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+      position: relative;
+      bottom: 0px;
+  }
+
+  .main-content {
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+
+  .main-content .box {
+      margin: 5px 0;
+  }
 }
