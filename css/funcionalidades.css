@@ -120,7 +120,9 @@ footer {
 
 .funcionalidades {
   background-color: white;
-  margin:  0 20% 0 20%;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
 }
 
 .img-funci{
@@ -308,82 +310,107 @@ footer {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 300px) {
-
-  .prev,
-  .next,
-  .text {
-    font-size: 11px
-  }
-}
-
 @media all and (max-width: 320px) {
   .overlay a {
     font-size: 40px;
     top: 15px;
     right: 35px;
-  }
-
-  .overlay .close {
-    font-size: 40px;
+}
+.overlay .close {
+    font-size: 30px;
     top: 15px;
     right: 35px;
+}
+
+  .main-footer {
+    font-size: 0.6em;
+    text-align: center;
+    
   }
 
-  .logo {
-    width: 20%;
-  }
+
+
+
+
+
+
 
 }
 
 
 @media all and (max-width: 640px) {
-
+  
   .nav_links,
   .cta {
-    display: none;
+      display: none;
   }
 
   .menu {
-    display: initial;
+      display: initial;
   }
-
-  .container {
-    float: none;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .content-main {
-    float: none;
-    padding: 13%;
-  }
-
   .main-footer {
     font-size: 0.6em;
     text-align: center;
+    
   }
 
-  .logo {
-    width: 30%;
+  .funcionalidades {
+    max-width: 90%;
+    margin: auto;
+    padding: 10px;
+  
   }
+
+  .text-funci {
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1em;
+   
+  }
+
+  .titulo {
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    color:#0d2c54;
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,                    
+     1px -1px 0px #FFF,                  
+     1px 0px 0px #FFF;
+  }
+
+
 }
 
 @media screen and (max-width: 900px) {
-  footer {
-    position: relative;
-    bottom: 0px;
+
+  .nav_links,
+  .cta {
+      display: none;
+  }
+
+  .menu {
+      display: initial;
+  }
+  .main-footer {
+      position: relative;
+      bottom: 0px;
   }
 
   .main-content {
-    flex-wrap: wrap;
-    flex-direction: column;
+      flex-wrap: wrap;
+      flex-direction: column;
   }
 
   .main-content .box {
-    margin: 5px 0;
+      margin: 5px 0;
+  }
+
+  
+  .logo {
+    width: 40%;
   }
 
 }
