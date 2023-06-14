@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color:  #a9a9a9;
+  background-color:  #ffffff;
 }
 
 header {
@@ -123,6 +123,7 @@ footer {
   width: 70%;
   margin: auto;
   padding: 10px;
+  border: solid;
 }
 
 .img-funci{
@@ -132,7 +133,7 @@ footer {
 }
 
 .titulo {
-  text-align: justify;
+  text-align: center;
   margin: 10px 50px 10px 15px;
   font-size: 2em;
   color:#0d2c54;
@@ -144,7 +145,7 @@ footer {
 }
 
 .text-funci {
-  text-align: justify;
+  text-align: center;
   margin: 10px 50px 10px 15px;
   font-weight: bold;
   font-size: 1.5em;
@@ -327,6 +328,7 @@ footer {
     text-align: center;
     
   }
+  
 
 
 }
@@ -348,32 +350,7 @@ footer {
     
   }
 
-  .funcionalidades {
-    max-width: 90%;
-    margin: auto;
-    padding: 10px;
-  
-  }
 
-  .text-funci {
-    text-align: center;
-    margin: auto;
-    font-weight: bold;
-    font-size: 1em;
-   
-  }
-
-  .titulo {
-    text-align: center;
-    margin: auto;
-    font-size: 2em;
-    color:#0d2c54;
-    text-shadow: 
-    -1px -1px 0px #FFF, 
-    -1px 1px 0px #FFF,                    
-     1px -1px 0px #FFF,                  
-     1px 0px 0px #FFF;
-  }
 
 
 }
@@ -405,6 +382,33 @@ footer {
   
   .logo {
     width: 40%;
+  }
+
+  .funcionalidades {
+    max-width: 90%;
+    margin: auto;
+    padding: 10px;
+  
+  }
+
+  .text-funci {
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1em;
+   
+  }
+
+  .titulo {
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    color:#0d2c54;
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,                    
+     1px -1px 0px #FFF,                  
+     1px 0px 0px #FFF;
   }
 
 }
