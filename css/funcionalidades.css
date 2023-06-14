@@ -27,24 +27,6 @@ header {
 img {
   height: 100%;
   max-width: 100%;
-  border-radius: 10px;
-}
-
-.container {
-  margin: 0 auto;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.imagem {
-  width: 100%;
-  height: 100%;
-  float: left;
-  padding: 3% 25%;
 }
 
 .nav_links a,
@@ -129,35 +111,42 @@ img {
   font-size: 60px;
   color: #edf0f1;
 }
-
-article{
-  display:flex;
-  margin: 0;
-}
-
-.container {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.container img {vertical-align: middle;}
-
-.container .content {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
-
 footer {
   position:relative;
   bottom: 0px;
   width: 100%;
   background: #7DF9FF;
+}
+
+.funcionalidades {
+  background-color: white;
+  margin:  0 20% 0 20%;
+}
+
+.img-funci{
+  width: 100%;
+  text-align: center;
+  margin: 0 0 0 0; 
+}
+
+.titulo {
+  text-align: justify;
+  margin: 10px 50px 10px 15px;
+  font-size: 2em;
+  color:#0d2c54;
+  text-shadow: 
+  -1px -1px 0px #FFF, 
+  -1px 1px 0px #FFF,                    
+   1px -1px 0px #FFF,                  
+   1px 0px 0px #FFF;
+}
+
+.text-funci {
+  text-align: justify;
+  margin: 10px 50px 10px 15px;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 0 0 15px 0;
 }
 
 .main-content {
