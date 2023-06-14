@@ -119,11 +119,10 @@ footer {
 }
 
 .funcionalidades {
-  background-color: white;
+  background-color: rgb(237, 235, 235);
   width: 70%;
   margin: auto;
   padding: 10px;
-  border: solid;
 }
 
 .img-funci{
@@ -135,7 +134,7 @@ footer {
 .titulo {
   text-align: center;
   margin: 10px 50px 10px 15px;
-  font-size: 2em;
+  font-size: 3em;
   color:#0d2c54;
   text-shadow: 
   -1px -1px 0px #FFF, 
