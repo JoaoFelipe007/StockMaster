@@ -129,49 +129,6 @@ img {
     color: #edf0f1;
 }
 
-.beneficios {
-  display: flex;
-  margin-top: 1%;
-  width: 100%;
-}
-
-.title-beneficio {
-  margin-top: 3%;
-  font-size: 2em;
-  color:#0d2c54;
-  text-shadow: 
-  -1px -1px 0px #FFF, 
-  -1px 1px 0px #FFF,                    
-   1px -1px 0px #FFF,                  
-   1px 0px 0px #FFF;
-}
-
-.coluna-34 {
-  width: 34%;
-  word-wrap: break-word;
-  text-align: justify;
-  padding: 2%;
-  border-left: 0.3em solid #b7e4c7;
-  border-right: 0.3em solid #b7e4c7;
-  border-bottom: 0.5em solid #b7e4c7;
-  border-top: 0.5em solid #b7e4c7;
-  background-color: white;
-  flex-basis: 50%;
-}
-
-.coluna-33 {
-  width: 34%;
-  word-wrap: break-word;
-  text-align: justify;
-  padding: 2%;
-  border-left: 0.3em solid #b7e4c7;
-  border-right: 0.3em solid #b7e4c7;
-  border-bottom: 0.5em solid #b7e4c7;
-  border-top: 0.5em solid #b7e4c7;
-  background-color: white;
-  flex-basis: 50%;
-}
-
 footer {
   position:relative;
   bottom: 0px;
