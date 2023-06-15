@@ -20,9 +20,8 @@ body {
   padding: 25px;
 }
 
-/* BACKGROUND */
 .background, .backdrop {
-	background-color: #3f689c;
+	background-color: #0d2c54;
 	position: fixed;
   top: 0;
   left: 0;
@@ -30,17 +29,8 @@ body {
   bottom: 0;
 	background-size: cover;
 }
-.backdrop {
-	background: #333333;
-	filter: alpha(opacity=90);
-	opacity: .8;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-}
-.background {
-	background-image: url('http://images.unsplash.com/photo-1520846692007-5da001f1b57c?auto=format&fit=crop&w=1000&q=80');
-}
 
-/* HEADER */
+
 .formulario .header {
 	text-align: center;
 }
@@ -50,12 +40,16 @@ body {
   margin: 10px 0;
 }
 /* logo */
+
+img {
+  width: 300px;
+  text-align: center;
+}
 .formulario .header .logo {
-	border: 1px solid #CCC;
   border-radius: 50%;
   margin: 0 auto;
-  width: 87px;
-  height: 87px;
+  width: 300px;
+  height: 200px;
 }
 .formulario .header .logo .logo-area {
 	border: 1px solid #CCC;
@@ -202,15 +196,48 @@ body {
   text-align: center;
 }
 
-@media (max-width: 261px) {
+
+@media (max-width: 350px) {
+
+  img {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+  }
+
+.formulario .header .logo {
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.formulario .header .logo .logo-area {
+	border: 1px solid #CCC;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 75px;
+  margin: 5px;
+
+}
+
+}
+
+@media (max-width: 262px) {
   .xs-hidden {
     display: none !important;
   }
+
 }
-@media (min-width: 262px) {
+@media (min-width:261px) {
   .xs-show {
     display: none !important;
   }
+
+
 }
 
 /* ATRIBUIÇÃO */
