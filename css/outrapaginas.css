@@ -25,6 +25,7 @@ header {
   margin: -2px;
 }
 
+
 img {
   height: 100%;
   max-width: 100%;
@@ -124,13 +125,6 @@ footer {
   justify-content: center;
 }
 
-footer p:nth-child(1){
-  font-size: 30px;
-  color: white;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
 footer p:nth-child(2){
   color: white;
   font-size: 17px;
@@ -172,15 +166,15 @@ footer p:nth-child(2){
 }
 
 .img-funci{
-  width: 90%;
-  text-align: center;
-  margin: auto; 
+  width: 100%;
+  text-align: left;
+  margin: 0; 
 }
 
 
 .titulo {
-  text-align: center;
-  margin: 10px 50px 10px 15px;
+  text-align: left;
+  margin: auto;
   font-size: 3em;
   color:#0d2c54;
   text-shadow: 
@@ -191,7 +185,7 @@ footer p:nth-child(2){
 }
 
 .text-funci {
-  text-align: center;
+  text-align: left;
   margin: auto;
   margin-top: 15px;
   font-size: 1.5em;
@@ -241,7 +235,8 @@ footer p:nth-child(2){
   .menu {
       display: initial;
 
-}
+  }
+
 
 }
 
@@ -270,7 +265,7 @@ footer p:nth-child(2){
   }
 
   .text-funci {
-    text-align: center;
+    text-align: left;
     margin: auto;
     margin-top: 10px;
     font-size: 1em;
@@ -278,7 +273,7 @@ footer p:nth-child(2){
   }
 
   .titulo {
-    text-align: center;
+    text-align: left;
     margin: auto;
     font-size: 2em;
     color:#0d2c54;
@@ -310,12 +305,9 @@ footer p:nth-child(2){
     align-items: center;
     justify-content: center;
   }
-  
-  footer p:nth-child(1){
-    font-size: 30px;
-    color: white;
-    margin-bottom: 20px;
-    font-weight: bold;
+
+  .logo2 {
+    width: 30%;
   }
   
   footer p:nth-child(2){
@@ -324,6 +316,30 @@ footer p:nth-child(2){
     width: 50%;
     text-align: center;
     line-height: 26px;
+  }
+
+  .btn {
+    line-height: 50px;
+    font-size: 25px;
+    transition: 0.2s linear;
+    
+  }
+      
+  .btn {
+    padding: 0 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #0088a9;
+    margin: 10px;
+    border-radius: 30%;
+    position: relative;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #000000;
+    overflow: hidden;
+  }
+  
+  .btn:hover {
+   background-color: #ffffff;
   }
 
 }
