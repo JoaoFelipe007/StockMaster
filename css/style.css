@@ -266,17 +266,18 @@ footer p:nth-child(2){
   background-color: white;
   width: 70%;
   margin: auto;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 .img-funci{
   width: 95%;
   text-align: left;
   margin: auto; 
+  margin-left: 30px;
 }
 
 .titulo1{
   text-align: center;
-  margin: 10px 50px 10px 15px;
+  margin: 50px 0px 10px 15px;
   font-size: 5em;
   color:#0d2c54;
   text-shadow: 
@@ -290,6 +291,8 @@ footer p:nth-child(2){
   width: 95%;
   text-align: left;
   margin: auto;
+  margin-top: 30px;
+  margin-left: 60px;
   font-size: 3em;
   color:#0d2c54;
   text-shadow: 
@@ -304,6 +307,7 @@ footer p:nth-child(2){
   text-align: left;
   margin: auto;
   margin-top: 15px;
+  margin-left: 60px;
   font-size: 1.5em;
   padding: 0 0 15px 0;
 }
@@ -384,20 +388,38 @@ footer p:nth-child(2){
       bottom: 0px;
   }
 
+  .slider {
+    width: 85%;
+  }
+
   .logo {
     width: 40%;
   }
 
   .funcionalidades {
-    max-width: 90%;
+    background-color: white;
+    width: 80%;
     margin: auto;
-    padding: 10px;
-  
   }
-
+  
+  .ultimos{
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+  
+  .img-funci{
+    width: 95%;
+    text-align: left;
+    margin: auto; 
+    margin-left: 10px;
+  }
+  
   .titulo1{
     text-align: center;
-    margin: 10px 50px 10px 15px;
+    margin: auto;
+    margin-bottom: 30px;
     font-size: 3em;
     color:#0d2c54;
     text-shadow: 
@@ -406,18 +428,13 @@ footer p:nth-child(2){
      1px -1px 0px #FFF,                  
      1px 0px 0px #FFF;
   }
-
-  .text-funci {
+  
+  .titulo {
+    width: 95%;
     text-align: left;
     margin: auto;
     margin-top: 10px;
-    font-size: 1em;
-   
-  }
-
-  .titulo {
-    text-align: left;
-    margin: auto;
+    margin-left: 10px;
     font-size: 2em;
     color:#0d2c54;
     text-shadow: 
@@ -426,14 +443,18 @@ footer p:nth-child(2){
      1px -1px 0px #FFF,                  
      1px 0px 0px #FFF;
   }
-
-  .ultimos{
-    background-color: white;
-    width: 70%;
+  
+  .text-funci {
+    width: 94%;
+    text-align: left;
     margin: auto;
-    padding: 10px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1em;
+    padding: 0 0 15px 0;
   }
+  
+  
   
     footer {
     position: relative;
