@@ -203,7 +203,6 @@ footer {
 
 .center .content .fas {
   font-size: 1.4375rem;
-  background-color: #1a1a1a;
   height: 45px;
   width: 45px;
   line-height: 45px;
@@ -214,7 +213,7 @@ footer {
 }
 
 .center .content .fas:hover {
-  background-color: #f12020;
+  background-color: #0d2c54;
 }
 
 .center .content .text {
