@@ -1,138 +1,179 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>StockMaster</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link href="css/style.css" rel="stylesheet" />
-    <meta name="description" content="">
-    <script src="https://kit.fontawesome.com/162dba6519.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Monteserrat:500&display=swap" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>StockMaster</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link href="css/style.css" rel="stylesheet" />
+        <meta name="description" content="">
+        <script src="https://kit.fontawesome.com/162dba6519.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Monteserrat:500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a class="logo" href="index.html"><img src="imagem/logo5.png"></a>
+            <nav>
+                <ul class="nav_links">
+                    <li><a href="#">Dicas</a></li>
+                    <li><a href="funcionalides.html">Funcionalidades</a></li>
+                    <li><a href="#">Nossa História</a></li>
+                    <li><a href="#">Cadastro</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#">Acesso</a>
+            <p class="menu cta">Menu</p>
+            <div class="overlay">
+                <a class="close">&times;</a>
+                <div class="overlay_content">
+                    <a href="#">Dicas</a>
+                    <a href="funcionalides.html">Funcionalidades</a>
+                    <a href="#">Nossa História</a>
+                    <a href="#">Cadastro</a>
+                    <a href="#">Acesso</a>
+                </div>
+            </div>
+        </header>
+        <div class="slider">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="imagem/agilidade (1).jpg" style="width:100%">
+                </div>
 
-<body>
-    <header>
-        <a class="logo" href="index.html"><img src="imagem/logo5.png"></a>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="#">Dicas</a></li>
-                <li><a href="funcionalides.html">Funcionalidades</a></li>
-                <li><a href="#">Benefícios</a></li>
-                <li><a href="#">Cadastro</a></li>
-            </ul>
-        </nav>
-        <a class="cta" href="#">Acesso</a>
-        <p class="menu cta">Menu</p>
-        <div class="overlay">
-            <a class="close">&times;</a>
-            <div class="overlay_content">
-                <a href="#">Dicas</a>
-                <a href="funcionalides.html">Funcionalidades</a>
-                <a href="#">Benefícios</a>
-                <a href="#">Cadastro</a>
-                <a href="#">Acesso</a>
+                <div class="mySlides fade">
+                    <img src="imagem/organizacao.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="imagem/planejamento.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="imagem/otimizacao.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
-    </header>
-    <div class="slider">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="imagem/agilidade (1).jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="imagem/organizacao.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="imagem/planejamento.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="imagem/otimizacao.jpg" style="width:100%">
-            </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
-    </div>
-</div>
-    <script type="text/javascript" src="js/mobile.js"></script>
-    
-    <footer>
-        <div class="main-content">
-            <div class="left box">
-                <h2>
-                    Sobre
-                </h2>
-                <div class="content">
-                    <p>
-                        "Somos uma empresa especializada em soluções avançadas de controle de estoque, fornecendo às empresas a tranquilidade de uma gestão eficiente. 
-                        Com tecnologia de ponta e uma equipe especializada, oferecemos ferramentas personalizadas para otimizar o gerenciamento de estoque, maximizar a produtividade e reduzir custos. 
-                        Com nossa expertise, você terá total visibilidade, precisão e controle sobre seus produtos, permitindo que você foque no crescimento do seu negócio. 
-                        Simplifique o gerenciamento de estoque conosco e alcance resultados excepcionais."
-                    </p>
+        <script type="text/javascript" src="js/mobile.js"></script>
+        <section>
+            <div class="funcionalidades">
+                <div class="titulo1">Benefícios StockMaster</div>
+                <div class="img-funci">
+                    <img class="img-funci" src="imagem/deposito (2).jpg"
+                        alt="deposito">
                 </div>
+                <div class="titulo">Melhor gestão do estoque</div>
+                    <div class="text-funci">
+                        <p>O Stock Master permite um controle
+                            preciso e automatizado do estoque, evitando problemas como falta de produtos ou
+                            excesso de estoque. Com o sistema, é possível monitorar a entrada e saída de produtos,
+                            o que permite um controle mais efetivo das vendas e das compras..</p>
+                    </div>
             </div>
-            <div class="center box">
-                <h2>
-                    Endereço
-                </h2>
-                <div class="content">
-                    <div class="place">
-                        <span class="fas fa-map-marker-alt"></span>
-                        <span class="text-footer">Rua dos Bandeirantes, Jales-SP</span>
+            <div class="funcionalidades">
+                <div class="img-funci">
+                    <img class="img-funci" src="imagem/pexels-maitree-rimthong-1602726.jpg" alt="cofre porquinho">
+                </div>
+                <div class="titulo">Redução de custos</div>
+                    <div class="text-funci">
+                        <p> Com o controle eficiente do estoque,
+                            é possível reduzir os custos da empresa, evitando a necessidade de manter um
+                            grande volume de produtos em estoque e reduzindo o risco de perda ou desperdício
+                            de produtos. Além disso, o Stock Master permite uma gestão mais eficiente dos
+                            pedidos e das entregas, o que pode levar a uma redução dos custos de transporte..</p>
                     </div>
-                    <div class="phone">
-                        <span class="fas fa-phone-alt"></span>
-                        <span class="text-footer">(17) 99999-9999</span>
+            </div>
+            <div class="ultimos">
+                <div class="img-funci">
+                    <img class="img-funci" src="imagem/pexels-mikael-blomkvist-6476589.jpg" alt="relatorios">
+                </div>
+                <div class="titulo">Melhoria da produtividade</div>
+                    <div class="text-funci">
+                        <p>Com o sistema de controle de estoque,
+                            os funcionários da empresa podem dedicar menos tempo à tarefa de controlar o estoque
+                            e mais tempo a outras atividades importantes para o negócio. Além disso, com informações
+                            mais precisas sobre a disponibilidade de produtos, é possível tomar decisões mais
+                            rapidamente e evitar atrasos na entrega de produtos aos clientes.</p>
                     </div>
-                    <div class="email">
-                        <span class="fas fa-envelope"></span>
-                        <span class="text-footer">adm@sotckmaster.com.br</span>
+            </div>
+        </section>
+        <footer>
+            <div class="main-content">
+                <div class="left box">
+                    <h2>
+                        Sobre
+                    </h2>
+                    <div class="content">
+                        <p>
+                            "Somos uma empresa especializada em soluções avançadas de controle de estoque, fornecendo às
+                            empresas a tranquilidade de uma gestão eficiente.
+                            Com tecnologia de ponta e uma equipe especializada, oferecemos ferramentas personalizadas para
+                            otimizar o gerenciamento de estoque, maximizar a produtividade e reduzir custos.
+                            Com nossa expertise, você terá total visibilidade, precisão e controle sobre seus produtos,
+                            permitindo que você foque no crescimento do seu negócio.
+                            Simplifique o gerenciamento de estoque conosco e alcance resultados excepcionais."
+                        </p>
                     </div>
                 </div>
-            </div>
-            <div class="right box">
-                <h2>
-                    Fale Conosco
-                </h2>
-                <div class="content">
-                    <form action="#">
+                <div class="center box">
+                    <h2>
+                        Endereço
+                    </h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text-footer">Rua dos Bandeirantes, Jales-SP</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text-footer">(17) 99999-9999</span>
+                        </div>
                         <div class="email">
-                            <div class="text-footer">Email *</div>
-                            <input type="email" required>
+                            <span class="fas fa-envelope"></span>
+                            <span class="text-footer">adm@sotckmaster.com.br</span>
                         </div>
-                        <div class="msg">
-                            <div class="text-footer">Message *</div>
-                            <textarea name="msgform" id="msgform" cols="25" rows="2" required></textarea>
-                            <br />
-                            <div class="btn">
-                                <button type="submit">Send</button>
+                    </div>
+                </div>
+                <div class="right box">
+                    <h2>
+                        Fale Conosco
+                    </h2>
+                    <div class="content">
+                        <form action="#">
+                            <div class="email">
+                                <div class="text-footer">Email *</div>
+                                <input type="email" required>
                             </div>
-                            <div class="bottom">
-                                <center>
-                                    <span class="far fa-copyright"></span>
-                                    Created By 2023 No rights reserved.
-                                </center>
+                            <div class="msg">
+                                <div class="text-footer">Message *</div>
+                                <textarea name="msgform" id="msgform" cols="25" rows="2" required></textarea>
+                                <br />
+                                <div class="btn">
+                                    <button type="submit">Send</button>
+                                </div>
+                                <div class="bottom">
+                                    <center>
+                                        <span class="far fa-copyright"></span>
+                                        Created By 2023 No rights reserved.
+                                    </center>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
+         </footer>
         </div>
-    </footer>
-    </div>
-</body>
-
+    </body>
 </html>
