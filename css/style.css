@@ -260,18 +260,16 @@ footer p:nth-child(2){
   background-color: white;
   width: 70%;
   margin: auto;
-  padding: 10px;
 }
 
 .ultimos{
   background-color: white;
   width: 70%;
   margin: auto;
-  padding: 10px;
   margin-bottom: 30px;
 }
 .img-funci{
-  width: 100%;
+  width: 95%;
   text-align: left;
   margin: auto; 
 }
@@ -289,6 +287,7 @@ footer p:nth-child(2){
 }
 
 .titulo {
+  width: 95%;
   text-align: left;
   margin: auto;
   font-size: 3em;
@@ -301,6 +300,7 @@ footer p:nth-child(2){
 }
 
 .text-funci {
+  width: 94%;
   text-align: left;
   margin: auto;
   margin-top: 15px;
