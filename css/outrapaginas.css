@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:  #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #0d2c54;
+}
+
+
+.logo {
+  cursor: pointer;
+  width: 13%;
+  margin: -2px;
+}
+
+
+img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.nav_links a,
+.cta,
+.overlay_content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #edf0f1;
+  text-decoration: none;
+
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+}
+
+.nav_links li {
+  padding: 30px 30px 30px 30px;
+}
+
+.nav_links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay_content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d2c54;
+}
+
+.overlay a:hover,
+.overlay:focus {
+  color: #0088a9;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  padding: 5%;
+  background: #0d2c54;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p:nth-child(2){
+  color: white;
+  font-size: 17px;
+  width: 50%;
+  text-align: center;
+  line-height: 26px;
+}
+
+.btn {
+  line-height: 50px;
+  font-size: 25px;
+  transition: 0.2s linear;
+  
+}
+    
+.btn {
+  padding: 0 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #0088a9;
+  margin: 10px;
+  border-radius: 30%;
+  position: relative;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #000000;
+  overflow: hidden;
+}
+
+.btn:hover {
+ background-color: #ffffff;
+}
+
+.historia {
+  background-color: white;
+  width: 60%;
+  margin: auto;
+}
+
+.titulo2 {
+  width: 80%;
+  text-align: left;
+  margin: auto;
+  padding-top: 100px;
+  font-size: 3em;
+  color:#0d2c54;
+  text-shadow: 
+  -1px -1px 0px #FFF, 
+  -1px 1px 0px #FFF,                    
+   1px -1px 0px #FFF,                  
+   1px 0px 0px #FFF;
+}
+
+.text-hist {
+  word-spacing: 2px;
+  width: 80%;
+  text-align: left;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 100px;
+  font-size: 1.5em;
+  padding: 0 0 15px 0;
+}
+
+.funcionalidades {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+}
+
+.ultimos{
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.img-funci{
+  width: 95%;
+  text-align: left;
+  margin: auto; 
+}
+
+
+.titulo {
+  width: 95%;
+  text-align: left;
+  margin: auto;
+  font-size: 3em;
+  color:#0d2c54;
+  text-shadow: 
+  -1px -1px 0px #FFF, 
+  -1px 1px 0px #FFF,                    
+   1px -1px 0px #FFF,                  
+   1px 0px 0px #FFF;
+}
+
+.text-funci {
+  width: 94%;
+  text-align: left;
+  margin: auto;
+  margin-top: 15px;
+  font-size: 1.5em;
+  padding: 0 0 15px 0;
+}
+
+@media all and (max-width: 320px) {
+  .overlay a {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+}
+.overlay .close {
+    font-size: 30px;
+    top: 15px;
+    right: 35px;
+}
+
+  .main-footer {
+    font-size: 0.6em;
+    text-align: center;
+    
+  }
+  
+
+
+}
+
+
+@media all and (max-width: 640px) {
+  
+  .nav_links,
+  .cta {
+      display: none;
+  }
+
+  .menu {
+      display: initial;
+
+  }
+  .historia {
+    max-width: 90%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  
+  .titulo2 {
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    padding-top: 100px;
+    font-size: 2em;
+    color:#0d2c54;
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,                    
+     1px -1px 0px #FFF,                  
+     1px 0px 0px #FFF;
+  }
+  
+  .text-hist { 
+    text-align: left;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 1em;
+  }
+
+  
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .nav_links,
+  .cta {
+      display: none;
+  }
+
+  .menu {
+      display: initial;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+
+
+  .funcionalidades {
+    max-width: 90%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+
+  
+  }
+
+  .text-funci {
+    text-align: left;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 1em;
+   
+  }
+
+  .titulo {
+    text-align: left;
+    margin: auto;
+    font-size: 2em;
+    color:#0d2c54;
+    text-shadow: 
+    -1px -1px 0px #FFF, 
+    -1px 1px 0px #FFF,                    
+     1px -1px 0px #FFF,                  
+     1px 0px 0px #FFF;
+  }
+
+  .ultimos{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+  }
+
+  footer {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    padding: 5%;
+    background: #0d2c54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo2 {
+    width: 30%;
+  }
+  
+  footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 50%;
+    text-align: center;
+    line-height: 26px;
+  }
+
+  .btn {
+    line-height: 50px;
+    font-size: 25px;
+    transition: 0.2s linear;
+    
+  }
+      
+  .btn {
+    padding: 0 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #0088a9;
+    margin: 10px;
+    border-radius: 30%;
+    position: relative;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #000000;
+    overflow: hidden;
+  }
+  
+  .btn:hover {
+   background-color: #ffffff;
+  }
+
+}
